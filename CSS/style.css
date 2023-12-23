@@ -1,0 +1,183 @@
+.page {
+  padding: 20px 20px 30px 20px;
+  width: 300px;
+  background: white;
+  border-radius: 5px;
+  margin: auto;
+  transition: all 0.2s;
+  height: 380px;
+  box-shadow: 1px 1px 10px rgba(102, 51, 153, 0.166);
+}
+.box.url-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding-right: 20px;
+}
+
+.box.url-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: gray;
+  font-size: 12px;
+}
+
+.box.url-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.box.url-box button {
+  width: 100%;
+  background-color: #5a4ca1;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.box.url-box button:hover {
+  background-color: #483d8b;
+}
+
+#div-link {
+  margin-top: 20px;
+}
+
+#tylelien {
+  color: #5a4ca1;
+  text-decoration: none;
+}
+#copy {
+  font-size: 14px;
+  padding: 8px;
+  background: #e8ebf2;
+  color: #273144;
+}
+#copy span {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#copy:hover {
+  color: #35425a;
+  cursor: pointer;
+}
+#tylelien:hover {
+  text-decoration: underline;
+}
+
+.container .url-box {
+  margin-top: 60px;
+}
+
+.container .url-box p {
+  font-size: 12px;
+  color: grey;
+}
+
+.container .url-box input {
+  all: unset;
+  height: 20px;
+  width: 90%;
+  padding: 10px;
+  background: #c7c6c6;
+  font-size: 14px;
+  padding-left: 15px;
+  margin-top: 8px;
+  border-radius: 3px;
+}
+
+.container .generate-btn {
+  all: unset;
+  height: 50px;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5a4ca1;
+  border-radius: 3px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.container .qr-box {
+  height: 200px;
+  width: 100%;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  visibility: hidden;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 10px;
+}
+.box.share-box {
+  background-color: #fff;
+  border-radius: 10px;
+  height: auto;
+}
+/*
+*
+*
+*/
+.accordion {
+  background-color: #cacacad5;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #cccccc74;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #483d8b;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel a {
+  display: block;
+  text-decoration: none;
+  color: #273144;
+}
+.panel a:visited {
+  color: #273144;
+}
+.panel i {
+  font-size: 20px;
+}
+@media screen and (max-width: 700px) {
+}

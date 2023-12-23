@@ -1,0 +1,158 @@
+/* Variables */
+:root {
+  --main-col: #5a4ca1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.page h2 > i {
+  color: #5a4ca1;
+  font-size: 30px;
+}
+.sidebar {
+  height: auto;
+  width: 160px;
+  background-color: #2b2b2c;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  z-index: 1;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: none;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu {
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  color: white;
+  background-color: #383838;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu:hover {
+  background-color: var(--main-col);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.menu:hover > * {
+  transform: translateX(20px);
+}
+
+.menu > i {
+  opacity: 0;
+}
+
+.menu:hover > i {
+  opacity: 1;
+}
+
+.menu:active > i {
+  margin-left: 10px;
+}
+
+/* Pages */
+.allpage {
+  display: flex;
+  width: 40em;
+  height: 80vh;
+  box-shadow: 2px 2px 10px rgb(143, 141, 141);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.page {
+  width: calc(100% - 100px);
+  padding: 50px;
+  animation: fadein 0.3s 1 ease-out;
+  height: auto;
+}
+
+.page * {
+  margin: 10px;
+}
+
+a {
+  color: var(--main-col);
+}
+
+@keyframes fadein {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  accent-color: var(--main-col);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh;
+}
+
+.title {
+  user-select: none;
+  color: white;
+  padding: 20px;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 80px;
+    z-index: 1;
+  }
+
+  .allpage {
+    width: 43em;
+  }
+
+  .title {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .menu p span {
+    display: none;
+  }
+  .menu {
+    justify-content: center;
+    align-items: center;
+  }
+  .menu p > i {
+    font-size: 28px;
+  }
+  .menu:active > i {
+    margin-left: 0px;
+  }
+
+  .menu:hover > * {
+    transform: translateX(8px);
+  }
+}
