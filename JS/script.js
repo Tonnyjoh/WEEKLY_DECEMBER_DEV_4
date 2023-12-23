@@ -11,7 +11,7 @@ window.addEventListener("load", function () {
       setTimeout(() => {
         qrBox.style.visibility = "visible";
       }, 200);
-      qrBox.classList.add("active"); // Ajoutez la classe active directement ici
+      qrBox.classList.add("active"); 
     }
   });
 
