@@ -62,7 +62,7 @@ window.addEventListener("load", function () {
   function copyToClipboard() {
     var copyText = document.getElementById("tylelien");
     var textArea = document.createElement("textarea");
-    textArea.value = copyText.innerHTML; // Utilisez copyText.href pour obtenir le contenu du href
+    textArea.value = copyText.innerHTML; // contenu du href
     document.body.appendChild(textArea);
     textArea.select();
     document.execCommand("copy");
