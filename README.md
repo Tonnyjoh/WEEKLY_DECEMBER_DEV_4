@@ -1,5 +1,6 @@
 # WEEKLY_DECEMBER_DEV_4
 Rename your file to Week_4.
+We should have Week_4\index.php etc.
 # 
 In yourpath\htdocs\Week_4\PHP\connexionbase.php, www in Mamp
 edit @yourname and @yourpassword respectively.
