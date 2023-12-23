@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="CSS/style2.css" />
     <link rel="stylesheet" href="CSS/style.css" />
 
-    <title>Your Website Title</title>
+    <title>Week-4</title>
   </head>
   <body>
     <div class="allpage">
