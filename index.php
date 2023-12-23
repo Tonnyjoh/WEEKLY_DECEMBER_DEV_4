@@ -65,7 +65,7 @@
       <div id="share" class="page">
         <h2><i class="fa-solid fa-share-alt"></i> Share Options</h2>
         <div class="box share-box">
-          <p>Share your shortened URL on different platforms:</p>
+          <p>Share your QR code on different platforms:</p>
           <button class="accordion">Share</button>
           <div class="panel">
             <a href="https://twitter.com" target="_blank"
