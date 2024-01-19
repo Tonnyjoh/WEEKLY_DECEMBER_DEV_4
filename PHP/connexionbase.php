@@ -5,7 +5,7 @@
           $bdd= new PDO(
             'mysql:host=localhost; dbname=week4; charset=utf8',
             'root',
-            '301234',
+            'root',
             [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
           );
     } catch (Exception $e ) {
